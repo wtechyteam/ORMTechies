@@ -1,0 +1,116 @@
+/* Resetting default margins and paddings for consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.containerContact {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem;
+  gap: 13rem;
+  font-family: "Liberation Sans";
+}
+
+.content2H {
+  width: 50%;
+  color: #000;
+  font-family: "Liberation Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.617px;
+  max-width: 684.394px;
+  text-transform: capitalize;
+}
+
+.subContent {
+  color: var(--Text-Color-Slate-Gray, #67748e);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 550px;
+}
+
+.illustration {
+  width: 50%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.form {
+  display: flex;
+  gap: 1rem;
+}
+
+.contactForm,
+.contactForm1 {
+  width: 100%;
+  max-width: 226.851px;
+  height: 36.987px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 0.75px solid #c3e665;
+}
+
+.previous-design {
+  width: 100%;
+  max-width: 243px;
+  height: 3rem;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.69);
+  background: linear-gradient(89deg, #253d32 0.94%, #a3b938 93.37%);
+  box-shadow: 0px 1rem 1.5rem 0px rgba(7, 63, 67, 0.07);
+  color: white;
+  text-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.25);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-transform: capitalize;
+  margin-top: 1rem;
+}
+
+.previous-design:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .containerContact {
+    flex-direction: column; /* Stack content vertically */
+    gap: 2rem; /* Adjust vertical spacing */
+    padding: 1rem; /* Reduce padding */
+  }
+
+  .content2H {
+    width: 100%; /* Full width for content */
+    font-size: 18px; /* Adjust font size */
+  }
+
+  .subContent {
+    font-size: 12px; /* Adjust font size */
+    width: 100%; /* Full width for sub-content */
+  }
+
+  .illustration {
+    width: 100%; /* Full width for illustration */
+    align-items: center; /* Center align illustration */
+  }
+
+  .form {
+    width: 100%; /* Full width for form */
+    flex-direction: column; /* Stack inputs vertically */
+  }
+
+  .contactForm,
+  .contactForm1 {
+    width: 100%; /* Full width for input fields */
+  }
+
+  
+}

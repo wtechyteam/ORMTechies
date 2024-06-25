@@ -1,0 +1,82 @@
+/* Resetting default margins and paddings for consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base styles for the main container */
+.gContainer {
+  display: flex;
+  background-image: url('/assets/Section.png');
+  align-items: center;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+}
+
+/* Styles for the heading */
+.headG {
+  color: var(--ormtechies-com-nero-nero, #FFF);
+  font-family: "Liberation Sans";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 43.2px; /* 120% */
+  letter-spacing: 0.5px;
+}
+
+/* Styles for the sub-content */
+.SubContentG {
+  color: white;
+  font-family: "Liberation Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 150% */
+}
+
+/* Styles for the right container */
+.rightG {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: flex-start;
+}
+
+/* Styles for the left container */
+.leftG {
+  width: 15%;
+}
+
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+  .gContainer {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .leftG {
+    width: 100%; /* Full width on smaller screens */
+    display: flex;
+    justify-content: center; /* Center the image */
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .imageG {
+    margin-left: 0;
+  }
+
+  .SubContentG {
+    margin-left: 0; /* Center align the sub-content */
+  }
+
+  .rightG {
+    width: 100%; /* Full width on smaller screens */
+    align-items: center; /* Center align content */
+  }
+}

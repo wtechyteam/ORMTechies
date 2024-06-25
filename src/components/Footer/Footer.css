@@ -1,0 +1,217 @@
+.footer {
+  background-image: url("/assets/Footer.png");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 50px 0;
+  height: 670px;
+  flex-shrink: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 5px; /* Add left padding to shift everything */
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.col-md-4 {
+  width: 33.33%;
+  justify-content: center;
+}
+
+
+
+.logo img {
+  width: 150px;
+  height: auto;
+  margin-top: 10rem;
+}
+
+.contact,
+.services,
+.about {
+  margin-bottom: 30px;
+  color: var(--ormtechies-com-nero-nero, #fff);
+  font-family: "Liberation Sans";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22.5px; /* 150% */
+}
+
+.contact,
+.services li:hover {
+  color: #a9c348;
+}
+
+.about li:hover {
+  color: #a9c348;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.setting {
+  color: #3c5247;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.contact {
+  color: var(--ormtechies-com-nero-nero, #fff);
+  font-family: "Liberation Sans";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22.5px; /* 150% */
+}
+
+.social-media a {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 24px;
+  color: black;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.row2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+}
+.textFollow{
+  color:white;
+}
+.followUs {
+  text-align: center;
+  font-family: "Liberation Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 120% */
+}
+
+.social-media a:hover {
+  color: #f0f0f0;
+  background-color: #a9c348; /* Change hover background color if needed */
+}
+
+.contact a:hover {
+  color: #a9c348;
+}
+
+@media (max-width: 767px) {
+  .footer {
+    padding: 30px 0; /* Reduce padding for smaller screens */
+    height: auto; /* Ensure height is auto for better content fitting */
+  }
+  .textFollow{
+    color:black;
+  }
+
+  .container {
+    padding-left: 15px; /* Adjust padding for mobile */
+    padding-right: 15px; /* Adjust padding for mobile */
+  }
+
+  .row {
+    flex-direction: column; /* Stack columns vertically on small screens */
+    align-items: center; /* Center align for better visual on mobile */
+  }
+
+  .col-md-4 {
+    width: 100%; /* Full width for each column on small screens */
+    margin-bottom: 20px; /* Add margin for spacing between sections */
+    text-align: center; /* Center text for better readability on mobile */
+  }
+  .row2{
+    margin-top: 6rem;
+  }
+
+  .logo img {
+    margin-top: 1rem; 
+    margin-left:9rem;
+  }
+  .services{
+    margin-top:4rem;
+  }
+  .contact,
+  .services,
+  .about {
+    font-size: 14px; /* Slightly reduce font size for better fit on mobile */
+    line-height: 21px; /* Adjust line-height for better readability */
+    
+  }
+
+  h3 {
+    font-size: 20px; /* Reduce heading size for better fit on mobile */
+    margin-bottom: 10px; /* Adjust margin for better spacing */
+  }
+
+  .social-media a {
+    margin: 5px; /* Reduce margin for better fit on mobile */
+    width: 35px; /* Reduce size for better fit */
+    height: 35px; /* Reduce size for better fit */
+    line-height: 35px;
+    color: white;
+    background-color: black; /* Match height for proper alignment */
+  }
+
+  .contact a {
+    color: black;
+  }
+ 
+  .followUs {
+    font-size: 18px;
+    color: black; /* Reduce font size for better fit on mobile */
+    margin-top:16rem;
+    
+  }
+
+  .row2 {
+    gap: 0.5rem; /* Reduce gap between elements */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-4 {
+    width: 50%; /* Half-width for each column on tablets */
+    margin-bottom: 10px; /* Add margin for spacing between sections */
+    text-align: center; /* Center text for better readability on tablets */
+  }
+}
+
+@media (min-width: 992px) {
+  .col-md-4 {
+    width: 33.33%; /* Restore original width for large screens */
+    margin-bottom: 0; /* Remove bottom margin for large screens */
+    text-align: left; /* Restore original text alignment */
+  }
+  
+  .logo img {
+    margin-top: 10rem; /* Restore original margin for large screens */
+  }
+}

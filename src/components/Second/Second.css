@@ -1,0 +1,128 @@
+.reputation-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.text-container {
+  flex: 1;
+  margin-right: 20px;
+  margin-top: 3rem;
+}
+
+.text-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.text-container p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.quote-button {
+  display: flex;
+  width: 249.27px;
+  padding: 11.602px 21.484px 12.461px 21.484px;
+  justify-content: center;
+  align-items: center;
+  gap: 6.703px;
+  flex-shrink: 0;
+  border-radius: 85.938px;
+  border: 0.859px solid #C9F87C;
+  background: linear-gradient(89deg, #253D32 0.94%, #A3B938 93.37%);
+  color: white;
+  text-align: center;
+  font-family: "Liberation Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: capitalize;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.quote-button:hover {
+  transform: scale(1.05);
+}
+
+.icons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  flex: 1;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  width: 150px; /* Make sure this matches the height to maintain consistency */
+  height: 150px;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, border-color 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.icon img {
+  width: 50px;
+  height: auto;
+}
+
+.hoverC:hover,
+.quoraD:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+  border-color: #a9c348;
+  background: #f4f6e9;
+}
+
+.SecondHeading {
+  color: #212529;
+  font-family: "Liberation Sans";
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 43.2px; /* 120% */
+  letter-spacing: 0.5px;
+}
+
+.SecondPara {
+  width: 200px;
+}
+
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+  .reputation-container {
+    flex-direction: column; /* Stack text and icons vertically */
+  }
+
+  .text-container {
+    order: 1; /* Ensure text comes first */
+    margin: 0; /* Remove top margin */
+    margin-bottom: 20px; /* Add bottom margin for spacing */
+    text-align: center; /* Center-align text for better readability */
+  }
+
+  .icons-container {
+    order: 2; /* Ensure icons come after text */
+    justify-content: center; /* Center icons container */
+  }
+  
+  .icon {
+    width: calc(50% - 15px); /* Adjust width for two cards per row */
+    margin-bottom: 15px; /* Add margin between cards */
+  }
+
+  .quote-button {
+    width: 100%; /* Full width on smaller screens */
+    max-width: 300px; /* Max width for the button */
+    margin: 0 auto; /* Center align on smaller screens */
+  }
+}

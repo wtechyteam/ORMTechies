@@ -1,0 +1,91 @@
+/* Resetting default margins and paddings for consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base styles for icon container */
+.icon-containerH {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 40px 0;
+  margin-bottom: 0px; /* Extra semicolon removed */
+  flex-wrap: wrap; /* Allow items to wrap to next line */
+}
+
+/* Base styles for each icon item */
+.icon-itemH {
+  position: relative; /* Relative positioning for pseudo-element */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center align content horizontally */
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Include box-shadow in transition */
+  border-radius: 5px;
+  flex: 1 1 auto; /* Flex properties to allow items to grow and shrink */
+  max-width: 200px; /* Maximum width of each icon item */
+  margin: 10px; /* Margin between items */
+  text-align: center; /* Center align text */
+}
+
+/* Box shadow on hover */
+.icon-itemH:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow styles on hover */
+}
+
+/* Active icon item styles */
+.icon-itemH.selected {
+  border: 1px solid #A9C348;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles for icon image */
+.icon-image {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+/* Styles for icon label */
+.icon-label {
+  color: #053247;
+  font-family: "Liberation Sans";
+  font-size: 15.469px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px; /* 150% */
+  text-transform: capitalize;
+  margin-top: 5px; /* Added margin top for spacing */
+}
+
+/* Hover effect for icon item */
+.icon-itemH:hover {
+  transform: scale(1.1);
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .icon-containerH {
+    flex-wrap: nowrap; /* Do not wrap items */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    justify-content: flex-start; /* Align items to start on smaller screens */
+  }
+
+  .icon-item {
+    flex: 0 0 auto; /* Prevent items from shrinking */
+    max-width: 150px; /* Adjust maximum width for smaller screens */
+    margin: 5px; /* Adjust margin for smaller spacing */
+  }
+
+  .icon-label {
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
+
+  .icon-image {
+    width: 40px; /* Adjust image size for smaller screens */
+    height: 40px;
+  }
+}

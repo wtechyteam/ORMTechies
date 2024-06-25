@@ -1,0 +1,98 @@
+/* Styles for the 'Who We Serve' section */
+.who-we-serve {
+    text-align: center;
+    padding: 20px;
+    margin: 0 20px;
+  }
+  
+  .who-we-serve h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #212529;
+    text-align: center;
+    font-family: "Liberation Sans";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 43.2px; /* 120% */
+    letter-spacing: 0.5px;
+  }
+  
+  .who-we-serve p {
+    margin-bottom: 20px;
+    color: #212529;
+    text-align: center;
+    font-family: "Liberation Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+  }
+  
+  /* Grid layout for services */
+  .services-grid1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Default: 3 columns */
+    gap: 20px; /* Gap between grid items */
+    align-items: center;
+    justify-items: center;
+    grid-template-rows: repeat(3, 1fr);
+    max-height: 100%; /* Added to ensure grid container doesn't exceed parent height */
+  }
+  
+  /* Individual service card styles */
+  .service-card1 {
+    
+    border: 1px solid #ddd; /* Border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the card */
+    text-align: center; /* Center align text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+  }
+  
+  .service-card1:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    border-color: #A9C348;
+    background: #F4F6E9;
+  }
+  
+  .service-card1 img {
+    max-width: 60px; /* Max width for service icons */
+    margin-bottom: 10px; /* Spacing below image */
+  }
+  
+  .service-card1 h3 {
+    font-size: 1.2em; /* Heading font size */
+    margin-bottom: 10px; /* Spacing below heading */
+  }
+  
+  .service-card1 p {
+    font-size: 0.9em; /* Paragraph font size */
+    color: #666; /* Text color */
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 1024px) {
+   .services-grid1 {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+   .services-grid1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns, each taking 1 fraction of available space */
+    gap: 20px; /* Adjust the gap between grid items as needed */
+  
+    }
+    
+    
+  }
+  
+  .service-card1:nth-child(7) {
+    grid-column: 2/3;
+    grid-row: 3/3;
+    max-height: 100%;
+  }
