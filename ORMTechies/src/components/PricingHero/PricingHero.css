@@ -1,0 +1,127 @@
+.servicesHero {
+    position: relative; /* Ensure relative positioning for absolute child elements */
+    background-image: url('public/assets/aboutusFinal.png');
+    padding: 5rem 0;
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .containerServiceHero {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px;
+  }
+  
+  .rowServiceHero {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col-md-6ServiceHero {
+    flex: 0 0 80%;
+    max-width: 50%;
+    margin-left: -4rem;
+  }
+  
+  .img-fluidServiceHero2 {
+    max-width: 100%;
+    height: auto;
+    margin-left: 8rem; /* Add padding to the right of the image column */
+    margin-top:2rem;
+  }
+  .img-fluidServiceHero2:hover {
+    transform: scale(1.09);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+  
+  .contentService {
+    padding: 2rem;
+    position: relative;
+    width: 901px;
+  }
+  
+  .headingService {
+    color: #333;
+font-family: "Liberation Sans";
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 65px; /* 100% */
+text-transform: capitalize;
+
+  }
+  
+
+  .serviceBody2 {
+    color: #333;
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.3rem; /* Adjust font size */
+    font-weight: 400;
+    margin-top:2rem;
+    line-height: 2; /* Adjust line height */
+    text-align: left; /* Align text as needed */
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 992px) {
+    .contact-hero {
+      height: auto; /* Remove fixed height on smaller screens */
+      min-height: 100vh; /* Ensure at least full viewport height */
+      padding: 3rem 0; /* Adjust padding for smaller screens */
+    }
+    .line2 {
+      display: none; /* Hide the line2 element on screens 768px and below */
+    }
+    .col-md-6ContactHero {
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  
+    .img-fluidContactHero {
+      margin-left: 0; /* Remove left margin on smaller screens */
+    }
+  
+    .headingContact, .contactBody {
+      text-align: center; /* Center align text on smaller screens */
+    }
+  
+    .headingContact {
+      font-size: 2.6rem; /* Adjust font size for smaller screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .contact-hero {
+      padding: 2rem 0; /* Adjust padding for smaller screens */
+    }
+    .line2 {
+      display: none; /* Hide the line2 element on screens 768px and below */
+    }
+    .img-fluidContactHero {
+      margin-left: 0; /* Ensure left margin is removed on smaller screens */
+    }
+  
+    .headingContact {
+      font-size: 2.6rem; /* Adjust font size for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-hero {
+      padding: 1.5rem 0; /* Adjust padding for smaller screens */
+    }
+  
+    .img-fluidContactHero {
+      margin-left: 0; /* Ensure left margin is removed on smallest screens */
+    }
+  
+    .headingContact {
+      font-size: 2.6rem; /* Adjust font size for smaller screens */
+    }
+  }
+  

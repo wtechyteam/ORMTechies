@@ -1,0 +1,193 @@
+.about-hero {
+  position: relative; /* Ensure relative positioning for absolute child elements */
+  background-image: url("public/assets/aboutusFinal.png");
+  padding: 5rem 0;
+  background-repeat: no-repeat;
+  margin-bottom: 0rem;
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+}
+.threeDots{
+  position: absolute;
+  margin-left: 45rem;
+}
+.containerContactHero {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px;
+}
+.cloud{
+  position: absolute;
+  margin-left: 18rem;
+}
+.rowContactHero {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-md-6ContactHero {
+  flex: 0 0 80%;
+  max-width: 50%;
+}
+
+.img-fluidAboutHero {
+  max-width: 100%;
+  height: auto;
+  margin-left: 10rem;
+  margin-top: 5rem;
+}
+.img-fluidAboutHero:hover {
+  transform: scale(1.07);
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.contentContact {
+  padding: 2rem;
+  position: relative;
+}
+.quote-button2 {
+  margin-top: 4rem;
+  display: flex;
+  width: 243px;
+  height: 60px;
+  flex-shrink: 0;
+  padding: 11.602px 21.484px 12.461px 21.484px;
+  justify-content: center;
+  align-items: center;
+  gap: 6.703px;
+  flex-shrink: 0;
+  border-radius: 85.938px;
+  border: 0.859px solid #c9f87c;
+  background: linear-gradient(329deg, #98aa28 13.03%, #d6ff7e 120.61%);
+  color: #fff;
+  text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  font-family: "Liberation Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27px;
+  text-transform: capitalize;
+}
+.quote-button2:hover {
+  background-color: #7cae29;
+}
+.headingContact {
+  color: #333;
+  font-family: "DM Sans", sans-serif;
+  font-size: 4rem; /* Adjust font size */
+  font-weight: 700;
+  line-height: 1.2; /* Adjust line height */
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-align: left; /* Align text as needed */
+  position: relative;
+}
+
+.line3-container {
+  display: inline-block;
+}
+
+.line3 {
+  position: absolute;
+  bottom: 6px; /* Adjust this value as needed */
+  left: 200px;
+  width: 45%;
+  z-index: 1;
+}
+
+.contactBody {
+  color: #333;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.3rem; /* Adjust font size */
+  font-weight: 400;
+  line-height: 1.6; /* Adjust line height */
+  text-align: left; /* Align text as needed */
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .contact-hero {
+    height: auto; /* Remove fixed height on smaller screens */
+    min-height: 100vh; /* Ensure at least full viewport height */
+    padding: 3rem 0; /* Adjust padding for smaller screens */
+  }
+  .line3 {
+    display: none; /* Hide the line2 element on screens 768px and below */
+  }
+  .col-md-6ContactHero {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .img-fluidAboutHero {
+    margin-left: auto; /* Center the image */
+    margin-right: auto; /* Center the image */
+  }
+
+  .headingContact,
+  .contactBody {
+    text-align: center; /* Center align text on smaller screens */
+  }
+
+  .headingContact {
+    font-size: 2.6rem; /* Adjust font size for smaller screens */
+  }
+  
+  .quote-button2 {
+    margin-left: auto; /* Center the button */
+    margin-right: auto; /* Center the button */
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-hero {
+    padding: 2rem 0; /* Adjust padding for smaller screens */
+  }
+  .line3 {
+    display: none; /* Hide the line2 element on screens 768px and below */
+  }
+  .img-fluidAboutHero {
+    margin-left: auto; /* Center the image */
+    margin-right: auto; /* Center the image */
+  }
+
+  .headingContact {
+    font-size: 2.6rem; /* Adjust font size for smaller screens */
+  }
+  
+  .quote-button2 {
+    margin-left: auto; /* Center the button */
+    margin-right: auto; /* Center the button */
+  }
+  
+  .threeDots, .cloud {
+    display: none; /* Hide these elements on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-hero {
+    padding: 1.5rem 0; /* Adjust padding for smaller screens */
+  }
+
+  .img-fluidAboutHero {
+    margin-left: auto; /* Center the image */
+    margin-right: auto; /* Center the image */
+  }
+
+  .headingContact {
+    font-size: 2.6rem; /* Adjust font size for smaller screens */
+  }
+  
+  .quote-button2 {
+    margin-left: auto; /* Center the button */
+    margin-right: auto; /* Center the button */
+  }
+  
+  .threeDots, .cloud {
+    display: none; /* Hide these elements on smaller screens */
+  }
+}

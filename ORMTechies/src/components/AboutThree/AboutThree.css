@@ -1,0 +1,55 @@
+/* src/AboutTwo.css */
+.aboutTwo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .aboutThreeImageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:3rem;
+  }
+  
+  .aboutThreeImage {
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .aboutTwoContent {
+    flex: 1;
+    padding: 20px;
+  }
+  .different{
+    color: #000;
+text-align: center;
+font-family: "Liberation Sans";
+font-size: 66px;
+font-style: normal;
+font-weight: 700;
+line-height: 99px; /* 150% */
+  }
+  .aboutThreeHeading {
+    color: #000;
+text-align: left;
+font-family: "Liberation Sans";
+font-size: 38.321px;
+font-style: normal;
+font-weight: 700;
+line-height: 57.481px; /* 150% */   
+  }
+  
+  .aboutTwoContent p {
+    color: #000;
+text-align: justify;
+font-family: "Liberation Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 150% */
+  }
+  

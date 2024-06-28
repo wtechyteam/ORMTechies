@@ -1,0 +1,40 @@
+.services-section-two {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+
+  }
+  
+  .services-section-two h2 {
+    color: #000;
+    text-align: justify;
+    font-family: "Liberation Sans";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    width:800px;
+    line-height: normal;
+  }
+  
+  .services-section-two p {
+    color: #000;
+text-align: justify;
+font-family: "DM Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px;
+margin-top:10px;
+ 
+  }
+ 
+
+  .services-section-two img{
+    position: absolute;
+   left:80rem;
+ top:40rem;
+     width: 340px;
+ height: 280px;
+ flex-shrink: 0;
+  }

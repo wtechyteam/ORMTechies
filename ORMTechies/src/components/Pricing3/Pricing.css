@@ -1,0 +1,51 @@
+.reputation-component {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: "Liberation Sans";
+  }
+  
+  .Repuservice {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .Repuservice-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .Repuservice-image-container {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .Repuservice-image {
+    max-width: 100%;
+    height: auto;
+  }
+ 
+  .reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .Repuheading1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .Repuheading2 {
+    font-size: 1.3em;
+    margin-top: 20px;
+    line-height: 0.6rem;
+  }
+  
+  .Reputationdescription {
+    font-size: 1.1em;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  

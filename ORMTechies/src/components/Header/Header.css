@@ -1,0 +1,209 @@
+/* Header.css */
+
+.h-wrapper {
+  background-image: url('public/assets/hero.png');
+  background-size: cover;
+  background-position: center;
+  
+
+  background-repeat: no-repeat; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+ 
+}
+
+.h-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.logo {
+  height: 98px;
+  width: 122px;
+}
+
+.h-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  font-family: "Liberation Sans";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  color: #FFF;
+  position: relative; /* Ensure relative positioning for absolute children */
+}
+
+.h-menu a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.h-menu > *:hover {
+  cursor: pointer;
+  color: #A9C348;
+}
+
+.buttonQ {
+  border-radius: 30px;
+  border: 1px solid #83975E;
+  background: #3C5247;
+  display: flex;
+  width: 136px;
+  height: 47px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Liberation Sans";
+  font-size: 15px;
+  font-weight: 700;
+  color: #FFF;
+  transition: transform 0.2s ease;
+}
+
+.buttonQ:hover {
+  transform: scale(1.05);
+}
+
+.submit:hover {
+  transform: scale(1.05);
+}
+
+.main-content {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.mainHeading {
+  color: #FFF;
+  font-family: "Liberation Sans";
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 68px;
+  position: relative;
+}
+
+.line {
+  stroke-width: 2px;
+  stroke: #C9F87C;
+  opacity: 0.5;
+  width: 100%;
+  max-width: 473px;
+  height: 9px;
+  margin: -50px auto 0;
+  transform: translateX(130px);
+}
+
+.content {
+  color: #FFF;
+  font-family: "Liberation Sans";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 34px;
+  opacity: 0.6;
+  max-width: 686px;
+  margin: 25px auto;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+/* Menu Toggle Button */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #FFF;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.menu-toggle:focus {
+  outline: none;
+}
+
+.close-menu {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: #FFF;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.close-menu:focus {
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .h-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .logo {
+    order: 1; /* Ensure logo appears first on the left */
+  }
+
+  .menu-toggle {
+    display: flex; /* Display menu toggle on small screens */
+    order: 2; /* Ensure menu toggle appears last on the right */
+  }
+
+  .h-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 1rem 0;
+    z-index: 1000; /* Ensure it's above other content */
+  }
+
+  .h-menu.open {
+    display: flex;
+  }
+
+  .h-menu a {
+    padding: 1rem 0;
+    width: 100%;
+    text-align: center;
+    color: #FFF;
+  }
+
+  .buttonQ {
+    display: none;
+  }
+
+  .buttonQ.open {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .submit:hover {
+    transform: scale(1.05);
+  }
+}
